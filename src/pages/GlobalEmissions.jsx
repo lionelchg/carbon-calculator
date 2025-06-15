@@ -393,6 +393,79 @@ const GlobalEmissions = () => {
           </div>
         </div>
       </div>
+
+      {/* Data Sources */}
+      <div className="card">
+        <h3 style={{ marginBottom: '1rem' }}>Data Sources & References</h3>
+        <div style={{ lineHeight: '1.8', fontSize: '0.95rem' }}>
+          <h4 style={{ color: '#2c3e50', marginBottom: '0.75rem' }}>Primary Sources:</h4>
+          <ul style={{ paddingLeft: '1.5rem', marginBottom: '1.5rem' }}>
+            <li>
+              <strong>IEA Global Energy Review 2025:</strong>{' '}
+              <a 
+                href="https://www.iea.org/reports/global-energy-review-2025" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ color: '#3498db', textDecoration: 'none' }}
+              >
+                Global Trends & Electricity Analysis
+              </a>
+            </li>
+            <li>
+              <strong>IEA Data Centers & Networks:</strong>{' '}
+              <a 
+                href="https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ color: '#3498db', textDecoration: 'none' }}
+              >
+                Data Center Energy Consumption
+              </a>
+            </li>
+            <li>
+              <strong>Ember Global Electricity Review 2024:</strong>{' '}
+              <a 
+                href="https://ember-energy.org/latest-insights/global-electricity-review-2024/electricity-transition-in-2023/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ color: '#3498db', textDecoration: 'none' }}
+              >
+                Renewable Energy Statistics
+              </a>
+            </li>
+          </ul>
+          
+          <h4 style={{ color: '#2c3e50', marginBottom: '0.75rem' }}>Key Figures Sources:</h4>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem' }}>
+            <div style={{ padding: '0.75rem', backgroundColor: '#f8f9fa', borderRadius: '6px', fontSize: '0.9rem' }}>
+              <strong>650 EJ Global Energy:</strong> IEA Global Energy Review 2025 - Global Trends
+            </div>
+            <div style={{ padding: '0.75rem', backgroundColor: '#f8f9fa', borderRadius: '6px', fontSize: '0.9rem' }}>
+              <strong>30,480 TWh Electricity:</strong> IEA Global Energy Review 2025 - Electricity Chapter
+            </div>
+            <div style={{ padding: '0.75rem', backgroundColor: '#f8f9fa', borderRadius: '6px', fontSize: '0.9rem' }}>
+              <strong>340 TWh Data Centers:</strong> IEA Data Centers & Networks Analysis 2024
+            </div>
+            <div style={{ padding: '0.75rem', backgroundColor: '#f8f9fa', borderRadius: '6px', fontSize: '0.9rem' }}>
+              <strong>4.3% Electricity Growth:</strong> IEA Global Energy Review 2025 - Key Findings
+            </div>
+            <div style={{ padding: '0.75rem', backgroundColor: '#f8f9fa', borderRadius: '6px', fontSize: '0.9rem' }}>
+              <strong>Regional Data:</strong> IEA country-specific electricity consumption reports
+            </div>
+            <div style={{ padding: '0.75rem', backgroundColor: '#f8f9fa', borderRadius: '6px', fontSize: '0.9rem' }}>
+              <strong>Renewable Mix:</strong> Combined IEA & Ember Energy 2024 data
+            </div>
+          </div>
+          
+          <div style={{ marginTop: '1.5rem', padding: '1rem', backgroundColor: '#e8f4fd', borderRadius: '6px', borderLeft: '4px solid #3498db' }}>
+            <p style={{ margin: 0, fontStyle: 'italic', color: '#2c3e50' }}>
+              <strong>Note:</strong> All data represents the most recent available figures from 2024 reports. 
+              Regional data center consumption figures for Ireland (18%) and Denmark (8%) sourced from 
+              IEA regional analysis and national energy statistics.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
